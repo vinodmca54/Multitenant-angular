@@ -1,0 +1,10 @@
+<div>
+  <app-header>
+    <button type="button btn-primary" (click)="login()">Submit</button>
+  </app-header>
+
+  <ul *ngFor="let user of userData | slice:0:5">
+    <li>{{user.user_name}}</li>
+  </ul>
+
+</div>
